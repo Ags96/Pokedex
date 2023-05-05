@@ -88,8 +88,14 @@ const PokeInfo = () => {
                 ))}
               </ul>
             </article>
-            <article className="movements__container">
-                  <h2>Movements</h2>
+            <article className="movements__main-container">
+                  <h2 className="movements__title">Movements</h2>
+                  <ul className="movements__container">
+                    {pokemon?.moves.slice(0, 23).map((move) => (
+                      <li className="move__item" key={move.move.url}>{move.move.name}</li>
+                    ))
+                    }
+                  </ul>
             </article>
           </section>
         </>
