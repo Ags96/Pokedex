@@ -1,0 +1,23 @@
+
+.poke__bar {
+    max-width: 100vw;
+    position: relative;
+    margin-bottom: 1.4em;
+}
+.poke__title {
+    max-height: 90px;
+    max-width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.trainer__name {
+    color: #FE1936;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.welcome__text {
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding-left: 10%;
+}

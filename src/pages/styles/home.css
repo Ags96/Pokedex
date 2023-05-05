@@ -1,0 +1,33 @@
+.home__presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+.title__img {
+    max-height: 100px;
+    object-fit: contain;
+    margin-top: 5em;
+}
+.greeting__trainer {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #FE1936;
+}
+.start-btn {
+    background-color: #FE1936;
+    color: #ffff;
+    border-color: #FE1936;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 0.2em;
+}
+.start-btn:hover {
+    background-color: #ff415a;
+    border-color: #ff415a;
+}
+.bottom__img {
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+}
