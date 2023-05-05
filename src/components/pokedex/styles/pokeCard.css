@@ -76,7 +76,7 @@
     font-size: 1rem;
 }
 .bg-grass {
-    background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    background-image: linear-gradient(178.92deg, #75bbba 0.92%, #95c7b1 47.96%, #c1d692 99.08%);
 }
 .bg-fire {
     background-image: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
@@ -125,6 +125,12 @@
 }
 .bg-fairy {
     background-image: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+.bg-flying {
+    background-image: linear-gradient(179.75deg, #2d8bc9 -19.96%, #3da0da 43.67%, #5f99c9 138.4%);
+}
+.color-flying {
+    color: #3498db;
 }
 .color-grass {
     color: #158555;

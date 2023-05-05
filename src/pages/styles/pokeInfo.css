@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.poke__header .poke__body{
+    font-family: "Roboto", sans-serif;
+}
+.poke__bar {
+    max-width: 100vw;
+    margin-bottom: 1.4em;
+}
+.card__info-container {
+    width: 100%;
+    display: flex;
+}
+/** **/
+.poke__header {
+    height: 150px;
+    position: relative;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.poke__img {
+    object-fit: contain;
+    height: 270px;
+}
+.poke__id {
+   text-align: center;
+   font-weight: 600;
+   font-size: 2rem;
+   margin-top: 2em;
+}
+.poke__complexion {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0.5em;
+}
+.stat__name {
+    text-align: center;
+    padding-top: 0.5em;
+}
+.stat__value {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1em;
+}
+.card__description {
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 2em 0 2em;
+    flex-wrap: wrap;
+}
+.types__container {
+    display: flex;
+    flex-direction: column;
+}
+.abilities__container {
+    display: flex;
+    flex-direction: column;
+}
+/* @media para solucionar un detalle de responsive */
+@media (max-width: 683px){
+    .types__container {
+        margin-top: 2em;
+    }
+    .abilities__container {
+        margin-top: 2em;
+    }
+}
+/*---------------------------------------------*/
+.poke__abilities {
+    display: flex;
+}
+.type__title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #302F2F;
+}
+.ability__title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #302F2F;
+}
+.poke__types-specific {
+    padding: 0.2em 2em;
+    margin-top: 0.2em;
+    color: #fff;
+    font-weight: 600;
+}
+.poke__abilities-specific {
+    padding: 0.2em 2em;
+    margin-top: 0.2em;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #302F2F;
+}
+.poke__body {
+    padding: 1em;
+    padding-top: 50px;
+}
+.poke__name {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+.poke__types {
+    display: flex;
+    gap: 2em;
+}
+.poke__types-specific {
+    text-transform: capitalize;  
+}
+.stats__bars-container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stats__title {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #302F2F;
+}
+.poke__stats-specific {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+.poke__stats-info {
+    display: flex;
+    justify-content: space-between;
+}
+.poke__stats-label {
+    color: #302F2F;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.poke__stats-value {
+    font-weight: 600;
+    color: #302F2F;
+    font-size: 1rem;
+}
+.progress__bar {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+}
+.progress__bar::-webkit-progress-bar {
+   background-color: #eee;
+   border-radius: 4px;
+}
+.progress__bar::-webkit-progress-value {
+   background-image: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+   border-radius: 4px;
+}
+  .movements__container {
+  
+}
+ 

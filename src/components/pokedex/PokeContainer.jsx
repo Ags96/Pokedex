@@ -34,15 +34,15 @@ const [ pokemons, getAllPokemons ] = useFetch(formUrl)
         {
           pokemons?.results
             ? (
-              pokemons?.results.map(pokemon => (
+              pokemons?.results.slice(firstIndex, lastIndex).map(pokemon => (
                 <PokeCard 
                 key={pokemon.url}
                 url={pokemon.url}
               />
-            )).slice(firstIndex, lastIndex)
+            ))
             )
             : (
-              pokemons?.pokemon.map(objPoke => (
+              pokemons?.pokemon.slice(firstIndex, lastIndex).map(objPoke => (
                 <PokeCard 
                 key={objPoke.pokemon.url}
                 url={objPoke.pokemon.url}
