@@ -9,10 +9,10 @@ import pokeTitle from "../assets/img/pokeTitle.png";
 const Pokedex = () => {
   const urlBase = "https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0";
   
+  const [currentPage, setCurrentPage] = useState(1);
 
   const [formUrl, setFormUrl] = useState(urlBase);
- 
-
+  
 
   const { trainerName } = useSelector((state) => state);
 
@@ -24,8 +24,16 @@ const Pokedex = () => {
         <span className="trainer__name">Welcome {trainerName},</span> here you
         can find your favorite pokemon
       </p>
-      <FormPoke urlBase={urlBase} setFormUrl={setFormUrl} />
-      <PokeContainer formUrl={formUrl} />
+      <FormPoke 
+        urlBase={urlBase} 
+        setFormUrl={setFormUrl}
+        setCurrentPage={setCurrentPage}
+         />
+      <PokeContainer 
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        formUrl={formUrl} 
+      />
     </div>
   );
 };
